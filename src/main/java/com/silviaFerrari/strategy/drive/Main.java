@@ -1,4 +1,4 @@
-package com.silviaFerrari.strategy;
+package com.silviaFerrari.strategy.drive;
 
 public class Main {
     public static void main(String[] args) {

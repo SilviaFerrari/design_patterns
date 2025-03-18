@@ -1,10 +1,10 @@
-package com.silviaFerrari.strategy;
+package com.silviaFerrari.strategy.drive;
 /*
 * CONTEXT
 * definisce la strategy interface e continee
 * tutte le funzionalità di base di un veicolo
 */
-public class Vehicle {
+public abstract class Vehicle {
     Drive driveMode;
 
     public Vehicle(Drive driveMode) {

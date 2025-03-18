@@ -1,0 +1,25 @@
+Design pattern COMPORTAMENTALE
+
+Usato per creare dipendenze uno-a-molti tra oggetti: quando un oggetto
+(il soggetto) cambia il proprio stato, tutte le sue dipendenze (observer)
+vengono avvisati e aggiornati automaticamente.
+
+Caso d'uso: immaginiamo di dover fare un'applicazione meteo. La stazione
+meteo è il soggetto che colleziona dati. Abbiamo tanti display che si
+devono aggiornare automaticamente quando cambiamo i dati meteo. Invece
+che far controllare continiamente i display per nuovi dati, i cambiamenti
+venogno direttamente notificati dalla stazione meteo.
+
+COMPONENTI:
+
+SUBJECT --> mantiene una lista degli observer e notifica loro i suoi
+        cambiamenti di stato.
+
+OBSERVER --> interfaccia che definisce il contratto per classi di
+        osservatori concrete.
+
+CONCRETE SUBJECT --> classe che implementa l'interfaccia del soggetto
+        e gestisce gli observer.
+
+CONCRETE OBSERVER --> classe che implementa l'interfaccia dell'observer
+        e riceve le notificazioni.

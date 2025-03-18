@@ -1,4 +1,4 @@
-package com.silviaFerrari.strategy;
+package com.silviaFerrari.strategy.drive;
 
 public class StandardDrive implements Drive{
     @Override

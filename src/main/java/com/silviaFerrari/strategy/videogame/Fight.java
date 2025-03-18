@@ -1,5 +1,5 @@
 package com.silviaFerrari.strategy.videogame;
 
-public interface FightBehavior {
+public interface Fight {
     public void fight();
 }

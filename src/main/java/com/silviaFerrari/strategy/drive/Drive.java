@@ -1,4 +1,4 @@
-package com.silviaFerrari.strategy;
+package com.silviaFerrari.strategy.drive;
 /*
  * STRATEGY
  * interfaccia che contiene un singolo metodo drive()
