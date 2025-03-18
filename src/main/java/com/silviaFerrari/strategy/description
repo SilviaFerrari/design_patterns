@@ -1,0 +1,24 @@
+Design pattern COMPORTAMENTALE
+
+Usato quando abbiamo tanti algoritmi per fare una stessa cosa
+e il client decide l'implementazione a runtime. Incapsuliamo tanti
+comportamenti (algoritmi) un più classi. Questo rende il codice
+più semplice da capire e lo rende indipendente.
+
+Possiamo selezionare e cambiare dinamicamente diversi algoritmi
+a tempo di runtiume. Questo permette di adattarci ai requisiti.
+Aiuta a rendere il codice scalabile e mantenibile nel tempo.
+
+Promuove il riuso del codice.
+
+COMPONENTI:
+
+CONTEXT --> classe che incapsula i dati e definisce
+        l'interfaccia per accedere agli algoritmi.
+
+STRATEGY --> interfaccia o classe astratta che definisce
+        l'interfaccia comune a tutti gli algoritmi.
+
+CONCRETE --> classi che implementano l'interfaccia
+        definita dallo Strategy. Ogni strategia concreta
+        fornisce un'implementazione dell'algoritmo.
