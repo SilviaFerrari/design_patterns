@@ -1,9 +1,11 @@
 package com.silviaFerrari.strategy.videogame;
 
-public abstract class Character {
-    Fight fightBehavior;
+// context
 
-    public Character(Fight fightBehavior) {
+public class Character {
+    FightStrategy fightBehavior;
+
+    public Character(FightStrategy fightBehavior) {
         this.fightBehavior = fightBehavior;
     }
 

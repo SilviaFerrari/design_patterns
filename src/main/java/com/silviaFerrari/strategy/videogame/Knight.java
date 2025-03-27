@@ -1,7 +1,7 @@
 package com.silviaFerrari.strategy.videogame;
 
 public class Knight extends Character {
-    public Knight(Fight fightBehavior) {
+    public Knight(FightStrategy fightBehavior) {
         super(fightBehavior);
     }
 

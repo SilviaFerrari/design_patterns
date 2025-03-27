@@ -1,7 +1,7 @@
 package com.silviaFerrari.strategy.videogame;
 
 public class Wrestler extends Character {
-    public Wrestler(Fight fightBehavior) {
+    public Wrestler(FightStrategy fightBehavior) {
         super(fightBehavior);
     }
 
