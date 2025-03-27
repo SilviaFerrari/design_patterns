@@ -1,0 +1,27 @@
+STRUCTURAL design pattern
+
+Permette di modificare i comportamento di un oggetto run time.
+Lo si può fare creando un set di classi decorator usate per contenere
+classi concrete. Ogni decorator aggiunge una caratteristica specifica
+al componente, e si possono usare tanti decorator per creare tante combinazioni.
+Particolarmente utile quando abbiamo tante combinazioni possibili che vanno
+a generare una mole massiva di sottoclassi.
+
+Si usa un decorator quando vogliamo aggiungere extra feature senza
+cambiare la struttura portante. Oppure per evitare di avere troppe classi
+per tutte le possibili combinazioni. Infine è utile per estendere il codice
+senza andare a modificare quello esiste, rispettando l'open close (OCP).
+
+COMPONENTI:
+
+COMPONENT --> definisce l'interfaccia per gli oggetti che hanno tante
+        responsabilità da aggiungere dinamicamente. Contiene i metodi comuni a tutto.
+
+CONCRETE COMPONENT --> componente concreto di base che estende l'interfaccia.
+        Definisce l'oggetto a cui aggiungere le varie feature.
+
+DECORATOR --> classe astratta che implementa l'interfaccia e che
+        contiene la caratteristica particolare che vogliamo aggiungere.
+
+CONCRETE DECORATORS --> classi concrete del decorator che aggiungono
+        effettivamente le varie caratteristiche specifiche.

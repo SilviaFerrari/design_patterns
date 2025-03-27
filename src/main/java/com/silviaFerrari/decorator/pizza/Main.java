@@ -13,8 +13,6 @@ public class Main {
         System.out.println("Cost: $" + pizza.getPrice());
 
         pizza = new PepperoniDecorator(pizza);
-
-        // Get the description and cost of the decorated pizza
         System.out.println("Description: " + pizza.getDescription());
         System.out.println("Cost: $" + pizza.getPrice());
     }

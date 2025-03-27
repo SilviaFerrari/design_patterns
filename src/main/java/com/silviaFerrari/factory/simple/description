@@ -1,0 +1,12 @@
+CREATIONAL desgin pattern
+
+Il Simple Factory può essere usato quando la creazione di un oggetto
+comporta una logica di business: la include nascondendola. Genera un'
+istanza di un oggetto/servizio per un client, ma senza esporgli alcuna
+implementazione.
+
+Esempio: vogliamo assemblare la nostra macchina da corsa personalizzata.
+Questo diventa molto difficile se dobbiamo fabbricarci da zero ogni pezzo!
+Una buona alternativa è farcelo fabbricare da qualcun'altro.
+
+COMPONENTI:

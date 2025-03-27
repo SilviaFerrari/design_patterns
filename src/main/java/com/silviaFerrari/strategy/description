@@ -13,12 +13,12 @@ Promuove il riuso del codice.
 
 COMPONENTI:
 
-CONTEXT --> classe che incapsula i dati e definisce
-        l'interfaccia per accedere agli algoritmi.
-
 STRATEGY --> interfaccia o classe astratta che definisce
         l'interfaccia comune a tutti gli algoritmi.
 
-CONCRETE --> classi che implementano l'interfaccia
+CONCRETE STRATEGY --> classi che implementano l'interfaccia
         definita dallo Strategy. Ogni strategia concreta
         fornisce un'implementazione dell'algoritmo.
+
+CONTEXT --> classe che incapsula i dati e definisce
+        l'interfaccia per accedere agli algoritmi.
