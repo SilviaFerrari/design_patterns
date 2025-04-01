@@ -2,13 +2,16 @@ package com.silviaFerrari.strategy.sort;
 
 import java.util.List;
 
+// context
 public class Sorter {
-    private SortingStrategy strategy;
+    SortingStrategy strategy;
 
     public Sorter(SortingStrategy strategy) {
         this.strategy = strategy;
     }
 
+    /* allows us to change the implementation of the strategy
+    without having to create a new instance of the class */
     public void setStrategy(SortingStrategy strategy) {
         this.strategy = strategy;
     }

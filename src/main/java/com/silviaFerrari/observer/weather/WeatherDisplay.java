@@ -3,7 +3,7 @@ package com.silviaFerrari.observer.weather;
 import java.util.Observable;
 
 public class WeatherDisplay implements Observer {
-    private String id;
+    private final String id;
     private float temperature;
     private float humidity;
 

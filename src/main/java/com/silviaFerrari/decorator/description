@@ -1,27 +1,27 @@
 STRUCTURAL design pattern
 
-Permette di modificare i comportamento di un oggetto run time.
-Lo si può fare creando un set di classi decorator usate per contenere
-classi concrete. Ogni decorator aggiunge una caratteristica specifica
-al componente, e si possono usare tanti decorator per creare tante combinazioni.
-Particolarmente utile quando abbiamo tante combinazioni possibili che vanno
-a generare una mole massiva di sottoclassi.
+It allows you to modify the behavior of a run time object.
+You can do this by creating a set of decorator classes used to contain
+concrete classes. Each decorator adds a specific feature
+to the component, and you can use many decorators to create many combinations.
+Particularly useful when we have many possible combinations that
+generate a massive amount of subclasses.
 
-Si usa un decorator quando vogliamo aggiungere extra feature senza
-cambiare la struttura portante. Oppure per evitare di avere troppe classi
-per tutte le possibili combinazioni. Infine è utile per estendere il codice
-senza andare a modificare quello esiste, rispettando l'open close (OCP).
+A decorator is used when we want to add extra features without
+changing the supporting structure. Or to avoid having too many classes
+for all the possible combinations. Finally, it is useful to extend the code
+without modifying the existing one, respecting the open close (OCP).
 
-COMPONENTI:
+COMPONENTS:
 
-COMPONENT --> definisce l'interfaccia per gli oggetti che hanno tante
-        responsabilità da aggiungere dinamicamente. Contiene i metodi comuni a tutto.
+COMPONENT --> defines the interface for objects that have many responsibilities
+        to be added dynamically. Contains the methods common to everything.
 
-CONCRETE COMPONENT --> componente concreto di base che estende l'interfaccia.
-        Definisce l'oggetto a cui aggiungere le varie feature.
+CONCRETE COMPONENT --> basic concrete component that extends the interface.
+        Defines the object to which to add the various features.
 
-DECORATOR --> classe astratta che implementa l'interfaccia e che
-        contiene la caratteristica particolare che vogliamo aggiungere.
+DECORATOR --> abstract class that implements the interface and that
+        contains the particular feature that we want to add.
 
-CONCRETE DECORATORS --> classi concrete del decorator che aggiungono
-        effettivamente le varie caratteristiche specifiche.
+CONCRETE DECORATORS --> concrete decorator classes that
+        actually add the various specific features.

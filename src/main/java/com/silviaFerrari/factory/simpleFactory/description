@@ -1,0 +1,14 @@
+CREATIONAL desgin pattern
+
+The Simple Factory can be used when the creation of an object
+involves business logic: it includes it by hiding it. It generates an instance
+of an object/service for a client, but without exposing any implementation to it.
+
+Example: we want to assemble our own custom race car.
+This becomes very difficult if we have to manufacture every piece from scratch!
+A good alternative is to have someone else manufacture it for us.
+
+COMPONENTS:
+
+FACTORY --> class with a creation method that contains a switch or if that
+        chooses which class to instantiate, based on the parameters passed.

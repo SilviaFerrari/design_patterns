@@ -1,24 +1,23 @@
-Design pattern COMPORTAMENTALE
+BEHAVIORAL design pattern
 
-Usato quando abbiamo tanti algoritmi per fare una stessa cosa
-e il client decide l'implementazione a runtime. Incapsuliamo tanti
-comportamenti (algoritmi) un più classi. Questo rende il codice
-più semplice da capire e lo rende indipendente.
+Useful when we have many algorithms to do the same thing and the
+client decides the implementation at runtime. We encapsulate many
+behaviors (algorithms) in multiple classes. This makes the code
+easier to understand, independent and reusable.
 
-Possiamo selezionare e cambiare dinamicamente diversi algoritmi
-a tempo di runtiume. Questo permette di adattarci ai requisiti.
-Aiuta a rendere il codice scalabile e mantenibile nel tempo.
+We can select and dynamically change different algorithms
+at runtime. This allows us to adapt to the requirements.
+Helps make the code scalable and maintainable over time.
 
-Promuove il riuso del codice.
 
-COMPONENTI:
+COMPONENTS:
 
-STRATEGY --> interfaccia o classe astratta che definisce
-        l'interfaccia comune a tutti gli algoritmi.
+STRATEGY --> interface or abstract class that defines
+        the interface common to all algorithms.
 
-CONCRETE STRATEGY --> classi che implementano l'interfaccia
-        definita dallo Strategy. Ogni strategia concreta
-        fornisce un'implementazione dell'algoritmo.
+CONCRETE STRATEGY --> classes that implement the interface
+        defined by the Strategy. Each concrete strategy
+        provides an implementation of the algorithm.
 
-CONTEXT --> classe che incapsula i dati e definisce
-        l'interfaccia per accedere agli algoritmi.
+CONTEXT --> class that encapsulates the data and defines
+        the interface to access the algorithms.

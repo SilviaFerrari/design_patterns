@@ -3,6 +3,7 @@ package com.silviaFerrari.strategy.sort;
 import java.util.List;
 import java.util.Collections;
 
+// concrete strategy
 public class QuickSort implements SortingStrategy{
     @Override
     public void sort(List<Integer> numbers) {

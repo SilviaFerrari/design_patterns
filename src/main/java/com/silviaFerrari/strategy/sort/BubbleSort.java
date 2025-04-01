@@ -2,6 +2,7 @@ package com.silviaFerrari.strategy.sort;
 
 import java.util.List;
 
+// concrete strategy
 public class BubbleSort implements SortingStrategy{
     @Override
     public void sort(List<Integer> numbers) {

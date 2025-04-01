@@ -1,7 +1,6 @@
 package com.silviaFerrari.strategy.videogame;
 
 // concrete strategy
-
 public class BoxingFight implements FightStrategy {
     @Override
     public void fight() {

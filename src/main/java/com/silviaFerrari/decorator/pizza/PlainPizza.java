@@ -1,4 +1,5 @@
 package com.silviaFerrari.decorator.pizza;
+
 // concrete component
 public class PlainPizza implements Pizza {
     @Override

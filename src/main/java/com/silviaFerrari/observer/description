@@ -12,8 +12,8 @@ venogno direttamente notificati dalla stazione meteo.
 
 COMPONENTI:
 
-SUBJECT --> mantiene una lista degli observer e notifica loro i suoi
-        cambiamenti di stato.
+SUBJECT --> interfaccia che mantiene una lista degli observer e notifica
+        loro i suoi cambiamenti di stato.
 
 OBSERVER --> interfaccia che definisce il contratto per classi di
         osservatori concrete.
